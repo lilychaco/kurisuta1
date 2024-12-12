@@ -66,7 +66,7 @@ body.is-drawerActive .header__logo {
 }
 
 
-.header__nav-list {
+.nav__list {
   @include mq(md) {
     height: inherit;
     display: flex;
@@ -74,13 +74,13 @@ body.is-drawerActive .header__logo {
   }
 }
 
-.header__nav-item {
+.nav__item {
   width: 100%;
   height: inherit;
   margin-left: rem(37);
 }
 
-.header__nav-link {
+.nav__link {
   width: 100%;
   height: inherit;
   // display: inline-block;
@@ -92,7 +92,7 @@ body.is-drawerActive .header__logo {
   align-items: center;
 }
 
-.header__nav-text {
+.nav__text {
   font-size: rem(16);
   font-family: $base-font-family;
   font-weight: medium;

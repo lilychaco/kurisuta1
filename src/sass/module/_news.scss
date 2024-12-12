@@ -22,7 +22,6 @@
 .news__title {}
 
 .news__list {
-
   display: grid;
   gap: rem(50);
   grid-template-columns: repeat(1, 1fr); // 1列レイアウト
@@ -36,30 +35,9 @@
     grid-template-columns: repeat(3, 1fr); // 3列レイアウト
     max-width: 1030px;
 		padding: 0;
-
   }
 }
 
 .news__item {
-  width: 100%;
-  box-shadow: 0 0 6px 0 rgba(27, 19, 16, 0.4);
-}
-
-.news__image {
-  width: 100%;
-  aspect-ratio: 320/200;
-  object-fit: cover;
-}
-
-.news__description {
-  padding-top: rem(22);
-  padding-inline: rem(32);
-  padding-bottom: rem(27);
-
-  font-size: rem(13);
-  font-family: $second-font-family;
-  font-weight: 700;
-  line-height: calc(25/13);
-  letter-spacing: 0.05em;
 
 }

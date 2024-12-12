@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
-  <meta name="robots" content="noindex" />
+  <meta name="robots" content="noindex , nofollow">
   <!-- meta情報 -->
   <title>クリスタ入門1
 	</title>
@@ -39,26 +39,26 @@
 			<a href="#">クリ★スタ</a>
 		</div>
     <!-- ナビゲーションメニュー -->
-    <nav class="header__nav">
-      <ul class="header__nav-list">
-        <li class="header__nav-item">
-          <a href="#about" class="header__nav-link">
-            <span class="header__nav-text">About</span>
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#about" class="nav__link">
+            <span class="nav__text">About</span>
           </a>
         </li>
-				<li class="header__nav-item">
-          <a href="#service" class="header__nav-link">
-            <span class="header__nav-text">Service</span>
+				<li class="nav__item">
+          <a href="#service" class="nav__link">
+            <span class="nav__text">Service</span>
           </a>
         </li>
-				<li class="header__nav-item">
-          <a href="#news" class="header__nav-link">
-            <span class="header__nav-text">News</span>
+				<li class="nav__item">
+          <a href="#news" class="nav__link">
+            <span class="nav__text">News</span>
           </a>
         </li>
-				<li class="header__nav-item">
-          <a href="#contact-form" class="header__nav-link">
-            <span class="header__nav-text">Contact</span>
+				<li class="nav__item">
+          <a href="#contact-form" class="nav__link">
+            <span class="nav__text">Contact</span>
           </a>
         </li>
       </ul>
@@ -68,7 +68,7 @@
    <button
 				type="button"
 				id="js-hamburger"
-				class="button hamburger"
+				class="header__button hamburger"
 				aria-controls="js-glabal-menu"
 				aria-expanded="false"
 				area-label="メニューを開閉する">
@@ -82,12 +82,12 @@
 	  <nav class="drawer__nav">
       <ul class="drawer__nav-list">
         <li class="drawer__nav-item">
-          <a href="#about" class="#">
+          <a href="#about" class="drawer__nav-link">
             <span class="header__nav-text">About</span>
           </a>
         </li>
 				<li class="drawer__nav-item">
-          <a href="#service" class="#">
+          <a href="#service" class="drawer__nav-link">
             <span class="drawer__nav-text">Service</span>
           </a>
         </li>
@@ -131,21 +131,21 @@
       <div class="service__inner inner">
 				<h2 class="service__heading section-heading"  id="service">Service</h2>
         <ul class="service__list">
-          <li class="service__item">
-            <div class="service__content">
-              <h3 class="service__title">リリース時のサポートで<br>サービスのブランディングを</h3>
-              <p class="service__text">弊社では、リリース時もサポートさせて頂きます。プレスリリース用のサイトや動画制作を通して、サービスのブランディングを行わせて頂きます。</p>
+          <li class="service__item media-card">
+            <div class="media-card__content">
+              <h3 class="media-card__title">リリース時のサポートで<br>サービスのブランディングを</h3>
+              <p class="media-card__text">弊社では、リリース時もサポートさせて頂きます。プレスリリース用のサイトや動画制作を通して、サービスのブランディングを行わせて頂きます。</p>
             </div>
-						<div class="service__img">
+						<div class="media-card__img">
               <img src="./assets/images/service-image@2x.jpg" alt="省略">
             </div>
           </li>
-					<li class="service__item">
-            <div class="service__content">
-              <h3 class="service__title">リリース後のサポートで<br>効果を最大化させる</h3>
-              <p class="service__text">弊社では、リリース後もサポートさせて頂きます。サービスはリリース後に様々な課題にぶつかります。そこでクライアント様と一緒に改善を行うこと<span class="u-desktop">で、デザインの効果を最大化させます。</span></p>
+				 <li class="service__item media-card">
+            <div class="media-card__content">
+              <h3 class="media-card__title">リリース後のサポートで<br>効果を最大化させる</h3>
+              <p class="media-card__text">弊社では、リリース後もサポートさせて頂きます。サービスはリリース後に様々な課題にぶつかります。そこでクライアント様と一緒に改善を行うこと<span class="u-desktop">で、デザインの効果を最大化させます。</span></p>
             </div>
-						<div class="service__img">
+						<div class="media-card__img">
               <img src="./assets/images/service-image02@2x.jpg" alt="省略">
             </div>
           </li>
@@ -158,36 +158,36 @@
 <div class="news__inner inner">
 	  <h2 class="news__heading section-heading" id="news">News</h2>
   <ul class="news__list">
-    <li class="news__item">
+    <li class="news__item card">
       <img
-        class="news__image"
+        class="card__image"
         src="./assets/images/card-image1@2x.jpg"
         alt="黒を基調としたデバイスが並ぶ写真"
         loading="lazy"
       />
-      <p class="news__description">
+      <p class="card__description">
         新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
       </p>
     </li>
-    <li class="news__item">
+    <li class="news__item card">
       <img
-        class="news__image"
+        class="card__image"
         src="./assets/images/card-image2@2x.jpg"
         alt="スマートフォンのホーム画面が表示されている写真"
         loading="lazy"
       />
-      <p class="news__description">
+      <p class="card__description">
         新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
       </p>
     </li>
-    <li class="news__item">
+    <li class="news__item card">
       <img
-        class="news__image"
+        class="card__image"
         src="./assets/images/card-image3@2x.jpg"
         alt="暗い背景に光るノートパソコンの写真"
         loading="lazy"
       />
-      <p class="news__description">
+      <p class="card__description">
         新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
       </p>
     </li>
