@@ -65,37 +65,3 @@ body.is-drawerActive .header__logo {
   }
 }
 
-
-.nav__list {
-  @include mq(md) {
-    height: inherit;
-    display: flex;
-    justify-content: flex-end;
-  }
-}
-
-.nav__item {
-  width: 100%;
-  height: inherit;
-  margin-left: rem(37);
-}
-
-.nav__link {
-  width: 100%;
-  height: inherit;
-  // display: inline-block;
-  padding-inline: rem(9);
-  text-align: center;
-  color: white;
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-}
-
-.nav__text {
-  font-size: rem(16);
-  font-family: $base-font-family;
-  font-weight: medium;
-  line-height: calc(21/16);
-  letter-spacing: 0;
-}
