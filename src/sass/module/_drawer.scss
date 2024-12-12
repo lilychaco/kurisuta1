@@ -1,0 +1,85 @@
+@use "global"as *;
+
+.drawer {
+  margin-inline: auto;
+  width: 100%;
+  height: calc(100vh - 75px);
+  background-color: #1B1310;
+
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  color: #fff;
+  visibility: hidden;
+  /* 非表示 */
+
+  transform: translateX(0%);
+  transition: visibility 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+  /* スムーズなアニメーション */
+
+  z-index: 100;
+
+  @include mq(md) {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+.is-drawerActive {
+  overflow: hidden;
+}
+
+
+.drawer.is-drawerActive {
+  visibility: visible;
+  /* 表示する */
+  transform: translateX(0);
+  /* 元の位置に戻す */
+}
+
+
+.drawer-layout {
+  margin-top: 75px;
+}
+
+.drawer__nav {
+  margin-inline: auto;
+  width: 100%;
+  margin-top: rem(212);
+  min-height: rem(242);
+  padding-bottom: rem(70);
+
+
+
+  @include mq(md) {}
+}
+
+.drawer__nav-list {
+  height: inherit;
+  text-align: center;
+
+}
+
+.drawer__nav-item {
+  width: 100%;
+
+}
+
+.drawer__nav-item:not(:first-child) {
+  margin-top: rem(46);
+
+}
+
+.drawer__nav-link {
+  width: 100%;
+  height: inherit;
+  font-size: rem(16);
+  font-family: $base-font-family;
+  font-weight: $normal;
+  line-height: 1.875;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}

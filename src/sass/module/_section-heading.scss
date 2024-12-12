@@ -1,0 +1,12 @@
+@use "global"as *;
+
+.section-heading {
+  text-align: center;
+  font-size: rem(36);
+  font-family: $base-font-family;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  scroll-margin-top: 85px;
+  /* ヘッダー高さ分+10pxの余白を設定 */
+}

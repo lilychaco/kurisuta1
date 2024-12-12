@@ -1,0 +1,30 @@
+@use "global"as *;
+
+.footer--layout {
+  margin-top: rem(50);
+}
+
+.footer {
+  margin-inline: auto;
+  width: 100%;
+  height: rem(60);
+  background-color: #1B1310;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include mq(md) {
+    height: rem(79);
+  }
+}
+
+.footer__copy {
+  color: $white;
+  font-size: rem(14);
+  font-family: $base-font-family;
+  font-weight: 400;
+  line-height: calc(30/14);
+  letter-spacing: 0.05em;
+
+
+}

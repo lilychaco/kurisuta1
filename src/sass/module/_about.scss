@@ -1,0 +1,52 @@
+@use "global"as *;
+
+.about {}
+
+.about--layout {
+  margin-top: rem(104);
+
+  @include mq(md) {
+    margin-top: rem(106);
+  }
+}
+
+.about__inner {}
+
+
+
+.about__heading {
+  // scroll-margin-top: 75px;
+  // // /* ヘッダー高さ分の余白を設定 */
+}
+
+
+
+.about__content {
+  margin-top: rem(72);
+}
+
+.about__title {
+  font-size: rem(20);
+  font-family: $third-font-family;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.1em;
+
+  @include mq(md) {
+    font-size: rem(24);
+
+  }
+}
+
+.about__text {
+  margin-top: rem(18);
+  font-size: rem(14);
+  font-family: $third-font-family;
+  font-weight: 700;
+  line-height: calc(30 / 14);
+  letter-spacing: 0.05em;
+
+  @include mq(md) {
+    margin-top: rem(25);
+  }
+}
