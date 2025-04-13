@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="noindex , nofollow">
+  <!-- meta情報 -->
+  <title>クリスタ入門1
+	</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="" />
+<!-- googleフォント -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="./assets/js/script.js"></script>
+	<link rel="preload" href="./assets/images/fv-bgi_sp@2x.jpg" as="image">
+	<link rel="preload" href="./assets/images/fv-bgi@2x.jpg" as="image">
+
+</head>
+<body>
+	<header class="header">
+  <div class="header__inner">
+		<div class="header__logo">
+			<a href="#">クリ★スタ</a>
+		</div>
+    <!-- ナビゲーションメニュー -->
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#about" class="nav__link">
+            <span class="nav__text">About</span>
+          </a>
+        </li>
+				<li class="nav__item">
+          <a href="#service" class="nav__link">
+            <span class="nav__text">Service</span>
+          </a>
+        </li>
+				<li class="nav__item">
+          <a href="#news" class="nav__link">
+            <span class="nav__text">News</span>
+          </a>
+        </li>
+				<li class="nav__item">
+          <a href="#contact-form" class="nav__link">
+            <span class="nav__text">Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ハンバーガーメニュー -->
+   <button
+				type="button"
+				id="js-hamburger"
+				class="header__button hamburger"
+				aria-controls="js-glabal-menu"
+				aria-expanded="false"
+				area-label="メニューを開閉する">
+				<span class="hamburger__line"></span>
+				</button>
+  </div>
+</header>
+
+<!-- ドロワーメニュー -->
+ <div class="drawer drawer--layout" id="js-global-menu" aria-hidden="true">
+	  <nav class="drawer__nav">
+      <ul class="drawer__nav-list">
+        <li class="drawer__nav-item">
+          <a href="#about" class="drawer__nav-link">
+            <span class="header__nav-text">About</span>
+          </a>
+        </li>
+				<li class="drawer__nav-item">
+          <a href="#service" class="drawer__nav-link">
+            <span class="drawer__nav-text">Service</span>
+          </a>
+        </li>
+				<li class="drawer__nav-item">
+          <a href="#news" class="drawer__nav-link">
+            <span class="drawer__nav-text">News</span>
+          </a>
+        </li>
+				<li class="drawer__nav-item">
+          <a href="#contact-form" class="drawer__nav-link">
+            <span class="drawer__nav-text">Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+ </div>
+
+<main>
+<section class="mv mv--layout">
+	<div class="mv__image">
+	<picture>
+		<source srcset="./assets/images/fv-bgi@2x.jpg" media="(min-width: 768px)" />
+		<img src="./assets/images/fv-bgi_sp@2x.jpg" alt="Cresta Designのメインビュー">
+		</picture>
+	</div>
+	<div class="mv__title">
+		<p class="mv__text">Cresta Design.
+		</p>
+	</div>
+</section>
+<section class="about about--layout" >
+      <div class="about__inner inner">
+				<h2 class="about__heading section-heading" id="about">About</h2>
+				<div class="about__content">
+          <h3 class="about__title">ミニマルで<br>洗練されたデザインを。</h3>
+          <p class="about__text">近年、ミニマルなデザインが流行しています。そこで弊社では、クライアント企業様新規サービス等の課題に対してミニマルで洗練されたデザインを実現させることで解決のサポートを致します。もちろん全てのサービスにおいてミニマルなデザインが課題解決になるわけではないので、課題や今後のサービスの展開等しっかりとヒアリングを行なった上でご提案させて頂きます。</p>
+				</div>
+			</div>
+</section>
+<section class="service service--layout" >
+      <div class="service__inner inner">
+				<h2 class="service__heading section-heading"  id="service">Service</h2>
+        <ul class="service__list">
+          <li class="service__item media-card">
+            <div class="media-card__content">
+              <h3 class="media-card__title">リリース時のサポートで<br>サービスのブランディングを</h3>
+              <p class="media-card__text">弊社では、リリース時もサポートさせて頂きます。プレスリリース用のサイトや動画制作を通して、サービスのブランディングを行わせて頂きます。</p>
+            </div>
+						<div class="media-card__img">
+              <img src="./assets/images/service-image@2x.jpg" alt="省略">
+            </div>
+          </li>
+				 <li class="service__item media-card">
+            <div class="media-card__content">
+              <h3 class="media-card__title">リリース後のサポートで<br>効果を最大化させる</h3>
+              <p class="media-card__text">弊社では、リリース後もサポートさせて頂きます。サービスはリリース後に様々な課題にぶつかります。そこでクライアント様と一緒に改善を行うこと<span class="u-desktop">で、デザインの効果を最大化させます。</span></p>
+            </div>
+						<div class="media-card__img">
+              <img src="./assets/images/service-image02@2x.jpg" alt="省略">
+            </div>
+          </li>
+					</ul>
+					</div>
+					</section>
+
+<!-- news-->
+<section class="news news--layout" >
+<div class="news__inner inner">
+	  <h2 class="news__heading section-heading" id="news">News</h2>
+  <ul class="news__list">
+    <li class="news__item card">
+      <img
+        class="card__image"
+        src="./assets/images/card-image1@2x.jpg"
+        alt="黒を基調としたデバイスが並ぶ写真"
+        loading="lazy"
+      />
+      <p class="card__description">
+        新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
+      </p>
+    </li>
+    <li class="news__item card">
+      <img
+        class="card__image"
+        src="./assets/images/card-image2@2x.jpg"
+        alt="スマートフォンのホーム画面が表示されている写真"
+        loading="lazy"
+      />
+      <p class="card__description">
+        新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
+      </p>
+    </li>
+    <li class="news__item card">
+      <img
+        class="card__image"
+        src="./assets/images/card-image3@2x.jpg"
+        alt="暗い背景に光るノートパソコンの写真"
+        loading="lazy"
+      />
+      <p class="card__description">
+        新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
+      </p>
+    </li>
+  </ul>
+</div>
+</section>
+
+<section class="contact-form contact-form--layout">
+	<div class="contact-form__inner inner">
+  <h2 class="contact-form__title"  id="contact-form">お問い合わせ</h2>
+  <form
+	class="contact-form__form"
+	action="https://formspree.io/f/xpwzelrl"
+	method="post">
+    <div class="contact-form__field">
+      <label class="contact-form__label" for="name">担当者名</label>
+      <input
+			class="contact-form__input"
+			type="text"
+			id="name"
+			name="name"
+			placeholder="">
+    </div>
+    <div class="contact-form__field">
+      <label class="contact-form__label" for="phone">電話番号</label>
+      <input
+			class="contact-form__input"
+			type="tel"
+			id="phone"
+			name="phone"
+			placeholder="">
+    </div>
+    <div class="contact-form__field">
+      <label class="contact-form__label" for="email">メールアドレス</label>
+      <input
+			class="contact-form__input"
+			type="email"
+			id="email"
+			name="email"
+			placeholder="">
+    </div>
+    <div class="contact-form__field">
+      <label class="contact-form__label" for="message">お問い合わせ内容</label>
+      <textarea
+			class="contact-form__textarea"
+			id="message"
+			name="message"
+			placeholder=""></textarea>
+    </div>
+    <div class="contact-form__actions">
+      <button class="contact-form__button" type="submit">送信</button>
+    </div>
+  </form>
+	</div>
+</section>
+<footer class="footer footer--layout">
+	<div class="footer__copy">
+		©︎crest.design all rights reserved
+	</div>
+
+</footer>
+
+
+
+  </main>
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

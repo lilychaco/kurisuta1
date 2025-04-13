@@ -1,0 +1,799 @@
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+.u-desktop {
+	display: none;
+}
+
+/* リキッドレイアウト対応 */
+
+html {
+	font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default padding */
+
+ul,
+ol {
+	padding: 0;
+}
+
+/* Remove default margin */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Set core root defaults */
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+
+body {
+	line-height: 1.5;
+	min-height: 100vh;
+	text-rendering: optimizeLegibility;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+
+ul,
+ol {
+	list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+
+a:not([class]) {
+	-webkit-text-decoration-skip: ink;
+	text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+
+img {
+	display: block;
+	max-width: 100%;
+	width: 100%;
+}
+
+/* Natural flow and rhythm in articles by default */
+
+article > * + * {
+	margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+
+img:not([alt]) {
+	filter: blur(10px);
+}
+
+/* フォームリセット */
+
+input,
+button,
+select,
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: transparent;
+	border: none;
+	border-radius: 0;
+	font: inherit;
+	outline: none;
+}
+
+textarea {
+	resize: vertical;
+}
+
+input[type=checkbox],
+input[type=radio] {
+	display: none;
+}
+
+input[type=submit],
+input[type=button],
+label,
+button,
+select {
+	cursor: pointer;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+/* ホバー */
+
+a {
+	-webkit-text-decoration: none;
+	color: inherit;
+	text-decoration: none;
+	transition: opacity 0.3s;
+}
+
+.about--layout {
+	margin-top: 6.5rem;
+}
+
+.about__content {
+	margin-top: 4.5rem;
+}
+
+.about__title {
+	font-family: "Noto Sans CJK JP", "Hiragino Sans", "Yu Gothic", "Meiryo", Arial, sans-serif;
+	font-size: 1.25rem;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	line-height: 2;
+}
+
+.about__text {
+	font-family: "Noto Sans CJK JP", "Hiragino Sans", "Yu Gothic", "Meiryo", Arial, sans-serif;
+	font-size: 0.875rem;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	line-height: 2.1428571429;
+	margin-top: 1.125rem;
+}
+
+.card {
+	box-shadow: 0 0 6px 0 rgba(27, 19, 16, 0.4);
+	width: 100%;
+}
+
+.card__image {
+	-o-object-fit: cover;
+	aspect-ratio: 320/200;
+	object-fit: cover;
+	width: 100%;
+}
+
+.card__description {
+	font-family: "" Hiragino Kaku Gothic ProN ", " ヒラギノ角ゴ ProN W3 ", " Noto Sans JP ", Arial, sans-serif;";
+	font-size: 0.8125rem;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	line-height: 1.9230769231;
+	padding-bottom: 1.6875rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-top: 1.375rem;
+}
+
+.contact-form {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.contact-form--layout {
+	margin-top: 9.125rem;
+}
+
+.contact-form__title {
+	font-family: "" Hiragino Kaku Gothic ProN ", " ヒラギノ角ゴ ProN W3 ", " Noto Sans JP ", Arial, sans-serif;";
+	font-size: 1.5rem;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	line-height: 2;
+	scroll-margin-top: 85px;
+	text-align: center; /* ヘッダー高さ分+10pxの余白を設定 */
+}
+
+.contact-form__form {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3.75rem;
+	max-width: 43.75rem;
+	width: 100%;
+}
+
+.contact-form__field {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3125rem;
+	width: 100%;
+}
+
+.contact-form__field:not(:first-child) {
+	margin-top: 1.5625rem;
+}
+
+.contact-form__label {
+	font-family: "" Hiragino Kaku Gothic ProN ", " ヒラギノ角ゴ ProN W3 ", " Noto Sans JP ", Arial, sans-serif;";
+	font-size: 1rem;
+	font-weight: 500;
+	letter-spacing: 0.05em;
+	line-height: 1;
+}
+
+.contact-form__input {
+	border: 1px solid #141414;
+	height: 1.875rem;
+	width: 100%;
+}
+
+.contact-form__textarea {
+	border: 1px solid #141414;
+	height: 10.6875rem;
+}
+
+.contact-form__actions {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3.25rem;
+	text-align: center;
+}
+
+.contact-form__button {
+	background-color: #1B1310;
+	border-radius: 30px;
+	color: #fff;
+	display: inline-block;
+	font-family: "Noto Sans CJK JP", "Hiragino Sans", "Yu Gothic", "Meiryo", Arial, sans-serif;
+	font-size: 1.25rem;
+	font-weight: 400;
+	letter-spacing: 0;
+	line-height: 1;
+	padding: 1.1875rem;
+	width: 14.6875rem;
+}
+
+.drawer {
+	background-color: #1B1310;
+	bottom: 0;
+	color: #fff;
+	height: calc(100vh - 75px);
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	position: fixed;
+	right: 0;
+	top: 0; /* 非表示 */
+	transform: translateX(0%);
+	transition: visibility 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+	visibility: hidden;
+	width: 100%;
+	width: 100%; /* スムーズなアニメーション */
+	z-index: 100;
+}
+
+.is-drawerActive {
+	overflow: hidden;
+}
+
+.drawer.is-drawerActive { /* 表示する */
+	transform: translateX(0);
+	visibility: visible; /* 元の位置に戻す */
+}
+
+.drawer-layout {
+	margin-top: 75px;
+}
+
+.drawer__nav {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 13.25rem;
+	min-height: 15.125rem;
+	padding-bottom: 4.375rem;
+	width: 100%;
+}
+
+.drawer__nav-list {
+	height: inherit;
+	text-align: center;
+}
+
+.drawer__nav-item {
+	width: 100%;
+}
+
+.drawer__nav-item:not(:first-child) {
+	margin-top: 2.875rem;
+}
+
+.drawer__nav-link {
+	font-family: "Roboto", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	height: inherit;
+	letter-spacing: 0.05em;
+	line-height: 1.875;
+	white-space: nowrap;
+	width: 100%;
+}
+
+.footer--layout {
+	margin-top: 3.125rem;
+}
+
+.footer {
+	align-items: center;
+	background-color: #1B1310;
+	display: flex;
+	height: 3.75rem;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.footer__copy {
+	color: #fff;
+	font-family: "Roboto", sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	line-height: 2.1428571429;
+}
+
+.hamburger {
+	border: none;
+	height: 16px;
+	position: fixed;
+	right: 15px;
+	top: 30px;
+	transition: all 0.3s ease-in-out;
+	width: 25px;
+	z-index: 999;
+}
+
+.hamburger__line { /* 線の太さ */
+	background-color: white;
+	display: block;
+	height: 2px;
+	left: 0;
+	margin: auto; /* 線の色 */
+	position: absolute;
+	right: 0; /* 左右中央 */
+	top: calc((100% - 2px) / 2); /* 上下中央 */
+	transition: transform 0.2s, opacity 0.2s;
+	width: 25px; /* 変化のアニメーション */
+}
+
+.hamburger__line::before,
+.hamburger__line::after {
+	background-color: white;
+	content: "";
+	display: block;
+	height: 100%;
+	position: absolute;
+	transition: transform 0.2s;
+	width: 100%; /* 変化のアニメーション */
+}
+
+/* ドロワーが閉じた状態＝ハンバーガー3本線 */
+
+.hamburger__line::before {
+	transform: translateY(-7px);
+}
+
+.hamburger__line::after {
+	transform: translateY(7px);
+}
+
+/* ドロワーが開いた状態＝ハンバーガー×印 */
+
+.hamburger[aria-expanded=true] .hamburger__line {
+	background: transparent; /* 中央線を非表示 */
+}
+
+.hamburger[aria-expanded=true] .hamburger__line::before {
+	background-color: white;
+	transform: rotate(45deg);
+}
+
+.hamburger[aria-expanded=true] .hamburger__line::after {
+	background-color: white;
+	transform: rotate(-45deg);
+}
+
+.header {
+	background-color: #1B1310;
+	border-bottom: 1px solid white;
+	height: 75px;
+	left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	position: fixed;
+	right: 0;
+	top: 0;
+	transition: all 0.6s ease-out;
+	width: 100%;
+	z-index: 200;
+}
+
+body.is-drawerActive .header {
+	border-bottom: 1px solid #1B1310;
+}
+
+.header__inner {
+	align-items: center;
+	display: flex;
+	height: inherit;
+	justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1440px;
+	padding: 0 0.9375rem;
+	width: 100%;
+}
+
+.header__logo {
+	color: white;
+	display: block;
+	width: 8.125rem;
+}
+
+body.is-drawerActive .header__logo {
+	display: none;
+}
+
+.header__logo a {
+	font-family: "Roboto", sans-serif;
+	font-size: 1.625rem;
+	font-weight: medium;
+	letter-spacing: 0;
+	line-height: 1.3076923077;
+}
+
+.header__nav {
+	display: none;
+}
+
+.inner {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 100%;
+}
+
+.media-card {
+	display: flex;
+	flex-direction: column;
+	gap: 2.25rem;
+}
+
+.media-card__img img {
+	-o-object-fit: cover;
+	aspect-ratio: 345/150;
+	object-fit: cover;
+	width: 100%;
+}
+
+.media-card__content {
+	width: 100%;
+}
+
+.media-card__title {
+	font-family: "Noto Sans CJK JP", "Hiragino Sans", "Yu Gothic", "Meiryo", Arial, sans-serif;
+	font-size: 1.25rem;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	line-height: 2;
+}
+
+.media-card__text {
+	font-family: "Noto Sans CJK JP", "Hiragino Sans", "Yu Gothic", "Meiryo", Arial, sans-serif;
+	font-size: 0.875rem;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	line-height: 2.1428571429;
+	margin-top: 1.25rem;
+}
+
+.media-card__text .u-desktop {
+	display: inline;
+}
+
+.mv {
+	height: calc(100vh - 75px);
+	margin-left: auto;
+	margin-right: auto; /* headerの高さをひく */
+	min-height: 36.875rem;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.mv--layout {
+	margin-top: 75px;
+}
+
+.mv__image {
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.mv__image img { /* 高さも親要素にフィットさせる */
+	-o-object-fit: cover; /* 画像の横幅を親要素に合わせる */
+	aspect-ratio: 375/590;
+	display: block; /* 画像をアスペクト比を維持したまま埋める */
+	height: 100%;
+	object-fit: cover; /* 画像をインライン要素からブロック要素に変更 */
+	width: 100%;
+}
+
+.mv__title {
+	align-items: center;
+	border: 2px solid white;
+	display: flex;
+	height: 6.25rem;
+	justify-content: center;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 18.75rem;
+	z-index: 2;
+}
+
+.mv__text {
+	color: white;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.875rem;
+	font-weight: 500;
+	letter-spacing: 0.05em;
+	line-height: 1;
+}
+
+.nav__item {
+	height: inherit;
+	margin-left: 2.3125rem;
+	width: 100%;
+}
+
+.nav__link {
+	align-items: center;
+	color: white;
+	display: flex;
+	height: inherit;
+	padding-left: 0.5625rem;
+	padding-right: 0.5625rem;
+	text-align: center;
+	white-space: nowrap;
+	width: 100%;
+}
+
+.nav__text {
+	font-family: "Roboto", sans-serif;
+	font-size: 1rem;
+	font-weight: medium;
+	letter-spacing: 0;
+	line-height: 1.3125;
+}
+
+.news--layout {
+	margin-top: 9.75rem;
+}
+
+.news__heading.section-heading {
+	letter-spacing: 0.1em;
+}
+
+.news__list {
+	grid-gap: 3.125rem;
+	display: grid;
+	gap: 3.125rem;
+	grid-template-columns: repeat(1, 1fr);
+	margin-top: 4.5rem;
+	padding-left: 0.8125rem;
+	padding-right: 0.75rem;
+}
+
+.section-heading {
+	font-family: "Roboto", sans-serif;
+	font-size: 2.25rem;
+	font-weight: 500;
+	letter-spacing: 0.05em;
+	line-height: 1;
+	scroll-margin-top: 85px;
+	text-align: center; /* ヘッダー高さ分+10pxの余白を設定 */
+}
+
+.service--layout {
+	margin-top: 9.875rem;
+}
+
+.service__heading {
+	padding-right: 1.25rem;
+}
+
+.service__list {
+	display: flex;
+	flex-direction: column;
+	gap: 2.75rem;
+	margin-top: 4.375rem;
+}
+
+@media screen and (min-width: 768px) {
+
+.u-desktop {
+	display: block;
+}
+
+.u-mobile {
+	display: none;
+}
+
+html {
+	font-size: 1.5533980583vw;
+}
+
+.about--layout {
+	margin-top: 6.625rem;
+}
+
+.about__title {
+	font-size: 1.5rem;
+}
+
+.about__text {
+	margin-top: 1.5625rem;
+}
+
+.contact-form--layout {
+	margin-top: 9.375rem;
+}
+
+.drawer {
+	display: none;
+	visibility: hidden;
+}
+
+.footer {
+	height: 4.9375rem;
+}
+
+.hamburger {
+	display: none;
+}
+
+.header__inner {
+	padding: 0 7.5rem;
+}
+
+.header__logo {
+	width: 8.125rem;
+}
+
+.header__nav {
+	display: block;
+	height: inherit;
+}
+
+.inner {
+	max-width: 1080px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.media-card {
+	display: flex;
+	flex-direction: row;
+	gap: 4.375rem;
+	justify-content: space-between;
+}
+
+.media-card:nth-of-type(odd) {
+	flex-direction: row-reverse;
+}
+
+.media-card__img img {
+	aspect-ratio: 480/240;
+}
+
+.media-card__content {
+	max-width: 30rem;
+	padding-top: 1.125rem;
+}
+
+.media-card__title {
+	font-size: 1.5rem;
+}
+
+.media-card__text {
+	margin-top: 1.75rem;
+}
+
+.mv__image img {
+	aspect-ratio: 1440/740;
+}
+
+.mv__title {
+	height: 8.5rem;
+	width: 28.0625rem;
+}
+
+.mv__text {
+	font-size: 3.125rem;
+}
+
+.nav__list {
+	display: flex;
+	height: inherit;
+	justify-content: flex-end;
+}
+
+.news--layout {
+	margin-top: 10rem;
+}
+
+.news__list {
+	gap: 2.1875rem;
+	grid-template-columns: repeat(3, 1fr);
+	max-width: 1030px;
+	padding: 0;
+}
+
+.service--layout {
+	margin-top: 10.375rem;
+}
+
+.service__heading {
+	padding-right: 0;
+}
+
+.service__list {
+	gap: 3rem;
+	margin-top: 4.625rem;
+}
+
+}
+
+@media (min-width: 1030px) {
+
+html {
+	font-size: 16px;
+}
+
+}
+
+@media (max-width: 375px) {
+
+html {
+	font-size: 4.2666666667vw;
+}
+
+}
+
+
+/*# sourceMappingURL=style.css.map */
